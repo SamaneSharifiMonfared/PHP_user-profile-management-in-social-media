@@ -1,6 +1,6 @@
 # Responsive social media template with PHP/MYSQL
 
-This is a social media like small php/mysql project 
+This is a social media using php/mysql. 
 
 
 Refrences:
