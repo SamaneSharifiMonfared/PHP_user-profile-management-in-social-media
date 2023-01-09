@@ -17,11 +17,8 @@
                     <div class="card-body text-center ">
                         <img src="img/samaneavatar.jpg" alt="img" width="120px" height="120px" class="rounded-circle mt-n5">
                         <h5 class="card-title"><?=$users[6][1]; ?></h5>
-                        <p class="card-text text-justify mb-2">I am Samane, a web developer, a machine learning engineer and a mother!</p>
-                        <ul class="list-unstyled nav justify-content-center">
-                            <a href="#" class="text-dark text-decoration-none"> <li class="nav-item">Friends <br> <strong>12M</strong></li></a>
-                            <a href="#" class="text-dark text-decoration-none"> <li class="nav-item">Enimes <br> <strong>1</strong></li></a>
-                        </ul>
+                        <p class="card-text text-justify mb-2"><?=$users[6][7];?></p>
+
 
                     </div>
 
@@ -35,7 +32,24 @@
 
                     <div class="card-body">
 
-                        <h5 class="mb-3 card-title">About <small><a href="pages/editprofile.php" class="ml-1">Edit</a></small></h5>
+                        <h5 class="mb-3 card-title">Profile <small><a href="pages/editprofile.php" class="ml-1">Edit</a></small></h5>
+
+                        <ul class="justify-content-center">
+
+                            <li class="nav-item">Email <br> <strong><?= $users[6][2]; ?></strong></li>
+                            <li class="nav-item">Phone <br> <strong><?= $users[6][4]; ?></strong></li>
+                            <li class="nav-item">Birthdate <br> <strong><?= $users[6][6]; ?></strong></li>
+                            <li class="nav-item">Following <br> <strong><?php
+
+                                    foreach($users as $u) {
+                                        if($u[0]==$users[6][10]){
+                                            echo $u[1];
+                                        }
+
+                                    }
+                                    ?></strong></li>
+
+                        </ul>
 
 
                     </div>
