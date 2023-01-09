@@ -9,7 +9,7 @@
     <div class="right-column">
 
         <?php
-        include_once "inc/cards/peopleyoumayknow.php";
+        include_once "inc/peopleyoumayknow.php";
         ?>
 
 
