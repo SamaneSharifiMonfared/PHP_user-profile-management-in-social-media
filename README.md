@@ -8,7 +8,7 @@ This is a social media using php/mysql.
 I have tried to challange my self in this project and not used any of my previous codes or classes.
 This is a pure work of only 5 hours to challange my ability to code php/mysql without any framework.
 
-I believe the code has many rooms to improve however the lack of timing was another challange which was
+I believe the code has many rooms to improvement however the lack of timing was another challange which was
 quite a good excercise.
 
 
