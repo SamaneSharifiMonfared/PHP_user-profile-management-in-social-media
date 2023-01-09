@@ -1,17 +1,7 @@
 <?php
 
-include_once "functions/classandfunction.php";
-//mysql connection
-$conn = OpenCon();
-
-$query_users="SELECT * FROM socialmedia.users;";
-
-$result = mysqli_query($query_users);
-
-print_r($result);
-
-
-
+include_once "functions/connection.php";
+include_once "functions/queries.php";
 include_once "assets/header.php";
 
 ?>
@@ -31,7 +21,6 @@ include_once "assets/header.php";
 
 
             </ul>
-            <img src="img/avatar-dhg.png" alt="" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
 
         </div>
 
@@ -653,6 +642,9 @@ include_once "assets/header.php";
             <div class="card-body">
                 <p>People you may know:</p>
 
+                <img src="img/<?=$images[3]?>" alt="img/<?=$images[3]?>" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
+
+
 
 
 
@@ -745,7 +737,7 @@ include_once "assets/header.php";
 
 
 <?php
-CloseCon($conn);
+$sqlConn->CloseCon($conn);
 
 
 ?>
