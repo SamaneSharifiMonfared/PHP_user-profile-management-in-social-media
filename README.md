@@ -2,7 +2,8 @@
 
 This is a social media using php/mysql. 
 
-<img scr="DemoSocialMedia.jpeg">
+
+![plot](DemoSocialMedia.jpeg)
 
 
 Refrences:
