@@ -15,7 +15,7 @@
                 <div class="card card-left1 mb-4" >
                     <img src="img/photo-1455448972184-de647495d428.jpg" alt="" class="card-img-top img-fluid">
                     <div class="card-body text-center ">
-                        <img src="img/samaneavatar.jpg" alt="img" width="120px" height="120px" class="rounded-circle mt-n5">
+                        <img src="../img/<?=$users[6][5]; ?>" alt="img" width="120px" height="120px" class="rounded-circle mt-n5">
                         <h5 class="card-title"><?=$users[6][1]; ?></h5>
                         <p class="card-text text-justify mb-2"><?=$users[6][7];?></p>
 
