@@ -1,50 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-<link rel="stylesheet" href="style.css">
+<?php
 
-<!------------------LIght BOx for Gallery-------------->
-<link rel="stylesheet" href="lightbox.min.css">
-<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
-<!------------------LIght BOx for Gallery-------------->
-<title>Application-1</title>
-</head>
+include_once "functions/classandfunction.php";
+//mysql connection
+$conn = OpenCon();
+
+$query_users="SELECT * FROM socialmedia.users;";
+
+$result = mysqli_query($query_users);
+
+print_r($result);
+
+
+
+include_once "assets/header.php";
+
+?>
 <body>
-
 
     <!-------------------------------NAvigation Starts------------------>
 
     <nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color:#3097D1">
-        <a href="index.html" class="navbar-brand"><img src="img/brand-white.png" alt="logo" class="img-fluid" width="80px" height="100px"></a>
+        <a href="index.php" class="navbar-brand"><img src="img/brand-white.png" alt="logo" class="img-fluid" width="80px" height="100px"></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive"><span class="navbar-toggler-icon"></span></button>
 
 
         <div class="collapse navbar-collapse" id="responsive">
             <ul class="navbar-nav mr-auto text-capitalize">
-                <li class="nav-item"><a href="index.html" class="nav-link active">home</a></li>
-                <li class="nav-item"><a href="profile.html" class="nav-link">profile</a></li>
-                <li class="nav-item"><a href="#modalview" class="nav-link" data-toggle="modal">messages</a></li>
-                <li class="nav-item"><a href="notification.html" class="nav-link">docs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link d-md-none">growl</a></li>
-                <li class="nav-item"><a href="#" class="nav-link d-md-none">logout</a></li>
+                <li class="nav-item"><a href="index.php" class="nav-link active">home</a></li>
+
 
             </ul>
-
-            <form action="" class="form-inline ml-auto d-none d-md-block">
-                <input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm">
-            </form>
-            <a href="notification.html" class="text-decoration-none" style="color:#CBE4F2;font-size:22px;"><i class="far fa-bell ml-3 d-none d-md-block"></i></a> 
             <img src="img/avatar-dhg.png" alt="" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
-
-
-
-
 
         </div>
 
@@ -288,7 +275,7 @@
 
                         <div class="card-body">
 
-                                <h5 class="mb-3 card-title">About <small><a href="#" class="ml-1">Edit</a></small></h5>
+                                <h5 class="mb-3 card-title">About <small><a href="editprofile.php" class="ml-1">Edit</a></small></h5>
 
                                 <p class="card-text"> <i class="fas fa-calendar-week mr-2"></i> Went to <a href="#" class="text-decoration-none">oh canada</a></p>
 
@@ -664,41 +651,12 @@
 
         <div class="card shadow-sm">
             <div class="card-body">
-                <p>&copy; 2018 Bootstrap
+                <p>People you may know:</p>
 
 
 
-                        <a href="#">About</a>
-                        <a href="#">Help</a>
-                        <a href="#">Terms</a>
-                        <a href="#">Privacy</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">Ads </a>
-                        <a href="#">Info</a>
-                        <a href="#">Brand</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Status</a>
-                        <a href="#">Apps</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">Advertise</a>
-                    
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                </p>
+
+
             </div>
 
         </div>
@@ -751,7 +709,6 @@
 
 
 
-    
 
 
 
@@ -783,6 +740,15 @@
 
 
 
+
+
+
+
+<?php
+CloseCon($conn);
+
+
+?>
 
 
 <!------------------------Light BOx OPtions------------->
