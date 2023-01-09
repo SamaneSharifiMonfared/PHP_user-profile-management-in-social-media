@@ -13,6 +13,7 @@
 
 
                 <div class="card card-left1 mb-4" >
+
                     <img src="img/photo-1455448972184-de647495d428.jpg" alt="" class="card-img-top img-fluid">
                     <div class="card-body text-center ">
                         <img src="../img/<?=$users[6][5]; ?>" alt="img" width="120px" height="120px" class="rounded-circle mt-n5">
@@ -35,6 +36,7 @@
                         <h5 class="mb-3 card-title">Profile <small><a href="pages/editprofile.php" class="ml-1">Edit</a></small></h5>
 
                         <ul class="justify-content-center">
+
 
                             <li class="nav-item">Email <br> <strong><?= $users[6][2]; ?></strong></li>
                             <li class="nav-item">Phone <br> <strong><?= $users[6][4]; ?></strong></li>
@@ -93,6 +95,12 @@
 
                 </div>
 
+                <div class="card shadow-sm card-left3 mb-4">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><small class="ml-2"><a href="pages/deleteaccount.php">Delete Account </a></small></h5>
+                    </div>
+                </div>
 
 
 
@@ -104,7 +112,8 @@
 
 
 
-            </div>
+
+                    </div>
 
 
 

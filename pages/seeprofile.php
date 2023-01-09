@@ -4,9 +4,9 @@ include_once "../functions/connection.php";
 include_once "../functions/queries.php";
 include_once "../assets/header.php";
 
-if(isset($_POST["submit"])) {
+if(isset($_POST["submit"])) {  //This is the value recieved from the button
     $id = $_POST["submit"];
-    $id= $id-1;
+    $id= $id-1; //because this is the id and it is always 1 less that the iterration
 }else{
     die();
 }
@@ -53,11 +53,22 @@ if(isset($_POST["submit"])) {
         <div class="card shadow-sm card-left2 mb-4">
 
             <div class="card-body">
-                <form method="post" action="follow.php">
+                <?php //if this user is followed already we will not show follow , we will show unfollow
 
-                <button type="submit" name="submit" value="<?=$id?>" class="btn btn-outline-info  btn-sm"  ><i class="fas fa-user"></i>Follow <?=$name?></button>
+                if($users[$id][9]!="yes"){
+                    ?>
+                <form method="post" action="follow.php">
+                <button type="submit" name="submit" value="<?=$id+1?>" class="btn btn-outline-info  btn-sm"  ><i class="fas fa-user"></i>Follow <?=$name?></button>
 
                 </form>
+                <br>
+                <?php }else{ //showing the unfollow button
+                ?>
+                <form method="post" action="unfollow.php">
+                    <button type="submit" name="submit" value="<?=$id+1?>" class="btn btn-outline-info  btn-sm"  ><i class="fas fa-user"></i>Unfollow <?=$name?></button>
+
+                </form>
+                <?php }?>
                 <br>
 
                 <ul class="justify-content-center">

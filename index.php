@@ -1,8 +1,10 @@
 <?php
 
+
 include_once "functions/connection.php";
 include_once "functions/queries.php";
 include_once "assets/header.php";
+
 
 ?>
 <body>

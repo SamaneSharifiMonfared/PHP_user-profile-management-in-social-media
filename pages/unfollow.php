@@ -8,7 +8,7 @@ if(isset($_POST["submit"])){
 
     $id=$_POST["submit"];
 
-   $q="UPDATE `socialmedia`.`users` SET `following` = 'yes' WHERE (`id` = '$id');";
+   $q="UPDATE `socialmedia`.`users` SET `following` = 'no' WHERE (`id` = '$id');";
 
     if ($conn->query($q) === TRUE) {
         echo "Profile updated successfully";
