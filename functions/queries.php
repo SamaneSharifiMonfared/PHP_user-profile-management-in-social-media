@@ -10,9 +10,9 @@ $users=$sqlConn->mysql_fetch($conn,$query_users);
 
 //
 
-$u=[];
-foreach($users as $user){
-//    echo $user[1];
-    $images[]=$user[5];
-
-}
+//$u=[];
+//foreach($users as $user){
+////    echo $user[1];
+//    $images[]=$user[5];
+//
+//}
