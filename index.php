@@ -590,17 +590,11 @@ include_once "assets/header.php";
 
     <div class="right-column">
 
-        <div class="card shadow-sm mb-4" >
-            <div class="card-body">
-                <h6 class="card-title">Sponsored</h6>
-                <img src="img/right1.jpg" alt="card-img" class="card-img mb-3">
-                <p class="card-text text-justify"> <span class="h6">It might be time to visit Iceland.</span> Iceland is so chill, and everything looks cool here. Also, we heard the people are pretty nice.  What are you waiting for?</p>
-                <a href="#" class="btn btn-outline-info card-link btn-sm">Buy a ticket</a>
+        <?php
 
+        include_once "inc/peopleyoumayknow.php";
+        ?>
 
-            </div>
-
-        </div>
 
 
         <div class="card shadow-sm mb-4">
@@ -635,21 +629,6 @@ include_once "assets/header.php";
             </div>
             
 
-
-        </div>
-
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <p>People you may know:</p>
-
-                <img src="img/<?=$images[3]?>" alt="img/<?=$images[3]?>" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
-
-
-
-
-
-
-            </div>
 
         </div>
 
