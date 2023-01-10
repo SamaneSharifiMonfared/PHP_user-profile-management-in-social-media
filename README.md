@@ -4,6 +4,10 @@ This is a social media using php/mysql.
 
 
 ![plot](DemoSocialMedia.jpeg)
+
+
+Sql Table Inside:
+
 ![plot](tablessql.jpeg)
 
 
