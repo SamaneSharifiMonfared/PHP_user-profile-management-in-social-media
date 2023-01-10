@@ -44,8 +44,9 @@
                             <li class="nav-item">Following <br> <strong><?php
 
                                     foreach($users as $u) {
-                                        if($u[0]==$users[6][10]){
+                                        if($u[9]=="yes"){
                                             echo $u[1];
+                                            echo '<br>';
                                         }
 
                                     }
