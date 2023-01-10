@@ -4,6 +4,8 @@ This is a social media using php/mysql.
 
 
 ![plot](DemoSocialMedia.jpeg)
+![plot](tablessql.jpeg)
+
 
 I have tried to challange my self in this project and not used any of my previous codes or classes.
 This is a pure work of only 5 hours to challange my ability to code php/mysql without any framework.

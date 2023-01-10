@@ -1,0 +1,8 @@
+id,name,email,password,phone,img,birthdate,bio,deleted,following,primaryaccount
+1,Jack,astro@mail.com,e10adc3949ba59abbe56e057f20f883e,+44738374637,avatar(1).jpeg,1990-10-11,"Well, nothing...",N,no,NULL
+2,Nasim,astro@mail.com,e10adc3949ba59abbe56e057f20f883e,+44738374637,avatar(4).jpeg,1990-10-11,"Well, nothing...",N,yes,NULL
+3,Seyed,astro@mail.com,e10adc3949ba59abbe56e057f20f883e,+44738374637,avatar(5).jpeg,1990-10-11,"Well, nothing...",N,no,NULL
+4,Ben,astro@mail.com,e10adc3949ba59abbe56e057f20f883e,+44738374637,avatar(6).jpeg,1990-10-11,"Well, nothing...",N,yes,NULL
+5,Peny,astro@mail.com,e10adc3949ba59abbe56e057f20f883e,+44738374637,avatar(3).jpeg,1990-10-11,"Well, nothing...",N,NULL,NULL
+6,Hulk,astro@mail.com,e10adc3949ba59abbe56e057f20f883e,+44738374637,avatar(2).jpeg,1990-10-11,"Well, nothing...",N,no,NULL
+7,Samane,astro@mail.com,e10adc3949ba59abbe56e057f20f883e,07361502190,samaneavatar.jpg,1990-10-11,"I am Samane , a Web Developer, using Php.",N,"This is you!",yes
